@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="José Murilo">
+    <meta name="description"
+        content="Plataforma de acesso aos Contracheques dos Funcionários do Instituto José Pereira do Nascimento - Monteiro/PB.">
+    <title>IEJPN - PORTAL DO FUNCIONÁRIO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <button class="btnSair" id="btnSair" onclick="sair()">SAIR</button>
+        <img src="logo.png" alt="Logo Instituto">
+        <h1>Portal do Funcionário</h1>
+        <hr>
+    </header>
+
+    <main>
+        <section id="secAcesso" class="acesso">
+            <form action="" method="get" id="formAcesso">
+                <div>
+                    <label for="inUsuario">Usuário:</label><br>
+                    <input id="inUsuario" type="text" required minlength="3" autocomplete="off" autofocus>
+                    <br><br>
+
+                    <label for="inSenha">Senha:</label><br>
+                    <input id="inSenha" type="password" required minlength="4" autocomplete="off">
+
+                    <p class="inExibir">
+                        <input type="checkbox" name="" id="inExibir" onclick="exibirSenha()"><span>Mostrar a
+                            Senha</span>
+                    </p>
+                </div>
+
+                <button type="submit" id="btnEntrar">ENTRAR</button>
+            </form>
+        </section>
+        <p id="msmConfirm" class="msmConfirm">...</p>
+
+        <section id="secDocumentos" class="documentos">
+            <h3>Olá, <span id="spanNomeUsuario">...</span>!</h3>
+            <p>Fique a vontade para visualizar seus Contracheques.</p>
+
+            <div class="divFiltro">
+                <hr><br>
+                <span>Localizar:</span>
+                <input type="search" name="" id="inFiltro">
+                <button onclick="filtrar(inFiltro)">Buscar</button>
+                <br><br>
+                <button id="btnLimparFiltro" class="btnLimparFiltro" onclick="limparFiltro()">Mostrar Tudo</button>
+                <br><br>
+                <hr>
+            </div>
+
+            <ul id="lista-arquivos"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#">
+            <p>&copy; Desenvolvido por José Murilo | 2025</p>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

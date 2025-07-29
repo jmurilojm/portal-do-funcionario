@@ -1,0 +1,257 @@
+:root {
+    --cor-tema: royalblue;
+    --cor-secundaria: gold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+
+body {
+    background-color: whit;
+}
+
+
+/* TOPO */
+header {
+    background-color: var(--cor-tema);
+    text-align: center;
+    padding: 15px 0 5px 0;
+}
+
+header img {
+    width: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 24pt;
+    color: white;
+}
+
+header hr {
+    border: none;
+    background-color: var(--cor-secundaria);
+    height: 5px;
+    margin-top: 10px;
+}
+
+header .btnSair {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 3px 5px;
+    border-radius: 5px;
+
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+header .btnSair:hover {
+    background-color: white;
+    color: var(--cor-tema);
+}
+
+
+/* MEIO */
+/*  */
+main .msmConfirm {
+    color: royalblue;
+    display: none;
+    text-align: center;
+    margin-top: 25vh;
+    font-size: 14pt;
+}
+
+main .msmConfirm p {
+    margin-bottom: 10px;
+}
+
+
+/* Tela Acesso*/
+main .acesso {
+    width: 300px;
+    margin: 50px auto;
+    min-height: 100px;
+    border-radius: 8px;
+    border: 2px solid var(--cor-tema);
+    padding: 30px 10px;
+    box-shadow: 0 0 10px lightgray;
+    display: nne;
+}
+
+main .acesso form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .acesso label {
+    color: var(--cor-tema);
+    font-weight: bolder;
+}
+
+main .acesso input {
+    border: none;
+    background-color: white;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--cor-tema);
+    cursor: pointer;
+}
+
+main .acesso input:focus {
+    background-color: lightyellow;
+}
+
+main .inExibir {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 10px 0;
+}
+
+main .inExibir span {
+    font-size: 8pt;
+    padding: 0 3px;
+    color: var(--cor-tema);
+}
+
+main .inExibir input[type="checkbox"] {
+    width: 10pt;
+    cursor: pointer;
+    border: 1px solid var(--cor-tema);
+}
+
+main .acesso button {
+    background-color: var(--cor-tema);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+main strong {
+    font-size: 14pt;
+}
+
+
+/* Tela Documentos*/
+main .documentos {
+    padding: 10px 10px 50px 10px;
+    background-color: white;
+    display: none;
+}
+
+main .documentos h3 {
+    font-size: 16pt;
+}
+
+main .documentos h3 span {
+    font-size: 16pt;
+    text-transform: capitalize;
+}
+
+main .divFiltro {
+    text-align: center;
+    padding: 10px;
+}
+
+main .divFiltro span {
+    font-weight: bold;
+}
+
+main .divFiltro input {
+    border: 1px solid black;
+    padding: 3px;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main .btnLimparFiltro {
+    display: none;
+}
+
+main button:hover {
+    box-shadow: 2px 2px 0 lightgray;
+    translate: -1px -1px;
+}
+
+main .documentos ul {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    list-style-type: none;
+}
+
+main .documentos li {
+    padding: 5px;
+    border: 1px solid var(--cor-tema);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0 var(--cor-tema);
+    background-color: white;
+}
+
+main .documentos a {
+    color: var(--cor-tema);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+main .documentos li:hover {
+    background-color: var(--cor-tema);
+    box-shadow: 2px 2px 0 gold;
+    translate: -8px -2px;
+}
+
+main .documentos a:hover {
+    color: white;
+}
+
+
+/* RODAPÉ */
+footer {
+    background-color: var(--cor-tema);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 3px 0;
+    border-top: 2px solid var(--cor-secundaria);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+footer p {
+    font-size: 8pt;
+}
