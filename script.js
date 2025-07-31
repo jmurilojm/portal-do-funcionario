@@ -1,9 +1,3 @@
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js')
-    .then((registro) => console.log('Service Worker registrado com sucesso! ',registro.scope))
-    .catch(err => console.error('Erro ao registrar o Service Worker:', err));
-}
-
 document.getElementById('formAcesso').addEventListener('submit', function (event) {
     event.preventDefault();
     let inSenha = document.getElementById('inSenha').value.trim();
