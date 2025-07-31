@@ -1,0 +1,24 @@
+{
+  "name" : "Portal do Funcionário IEJPN",
+  "short_name" : "Portal IEJPN",
+  "display" : "fullscreen",
+  "background_color" : "#000",
+  "theme_color" : "#fff",
+  "description" : "Portal de Contracheques",
+  "icons" : [
+    {
+      "src" : "icon-192.png",
+      "type" : "image/png",
+      "size" : "192x192",
+      "purpose" : "any maskable"
+    },
+    {
+      "src" : "icon-512.png",
+      "type" : "image/png",
+      "size" : "512x512",
+      "purpose" : "any maskable"
+    }
+  ],
+  "start_url" : ".",
+  "orientation" : "portrait-primary"
+}
