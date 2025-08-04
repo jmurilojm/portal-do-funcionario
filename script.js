@@ -24,6 +24,7 @@ async function buscarArquivos(usuario, senha) {
     let secAcesso = document.getElementById('secAcesso');
     let secDocumentos = document.getElementById('secDocumentos');
     let spanNomeUsuario = document.getElementById('spanNomeUsuario');
+    let hNomeUsuario = document.getElementById('hNomeUsuario');
     let inUsuario = document.getElementById('inUsuario');
     let msmConfirm = document.getElementById('msmConfirm');
     let bntSair = document.getElementById('btnSair');
@@ -49,7 +50,9 @@ async function buscarArquivos(usuario, senha) {
         secAcesso.style.display = 'none';
         secDocumentos.style.display = 'block';
         spanNomeUsuario.innerText = primeiroNome;
-        spanNomeUsuario.style.textTransform = arquivos.length==0 ? 'lowercase' : 'capitalize';
+        if(arquivos.length==0){
+            hNomeUsuario.innerText = 'Olá! Você não possui arquivos.';
+        }
         bntSair.style.display = 'block';
         msmConfirm.style.display = 'none';
 
