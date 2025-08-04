@@ -38,7 +38,7 @@ async function buscarArquivos(usuario, senha) {
         let url = await fetch(`https://script.google.com/macros/s/AKfycbwvTa1qlyNfpOVlLnn0JNFHsYalNei2vhhsiUGQeAZ1oevN5g6JDsCFzeCmdfT7eqS6Gw/exec?usuario=${usuario}&senha=${senha}`);
         let arquivos = await url.json();
 
-        let primeiroNome = arquivos.length>0 ? arquivos[0].name.split(' ')[0] : 'você não possui arquivos';
+        let primeiroNome = arquivos.length>0 ? arquivos[0].name.split(' ')[0] : '';
 
         const lista = document.getElementById("lista-arquivos");
         arquivos.forEach(arquivo => {
